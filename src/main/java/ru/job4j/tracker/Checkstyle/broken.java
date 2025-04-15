@@ -1,13 +1,14 @@
-package ru.job4j.tracker.checkstyle;
+package ru.job4j.tracker.Checkstyle;
 
 public class Broken {
     private int sizeOfEmpty = 10;
-    public String surname;
+    public String Surname;
 
     public static final String NEW_VALUE = "";
 
     void echo() {
     }
+
 
     void Media(Object obj) {
         if (obj != null) {
@@ -15,12 +16,13 @@ public class Broken {
         }
     }
 
-    void method(int a) {
 
+    void method(int a) {
     }
+
 
     String name;
 
-    Broken() {
+    Broken () {
     }
 }
