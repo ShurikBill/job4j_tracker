@@ -9,17 +9,17 @@ public class Broken {
     void echo() {
     }
 
-    void media (Object obj){
+    void media(Object obj) {
         if (obj != null) {
             System.out.println(obj);
         }
     }
 
-    void method (int a){
+    void method(int a) {
     }
 
     String name;
 
-    Broken (){
+    Broken() {
     }
 }
