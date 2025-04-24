@@ -2,24 +2,22 @@ package ru.job4j.tracker.checkstyle;
 
 public class Broken {
     private int sizeOfEmpty = 10;
-    public String surname;
-
+    public String surName;
+    public String name;
     public static final String NEW_VALUE = "";
 
-    void echo() {
+    public Broken() {
     }
 
-    void media(Object obj) {
+    public void echo() {
+    }
+
+    public void Media(Object obj) {
         if (obj != null) {
             System.out.println(obj);
         }
     }
 
     void method(int a) {
-    }
-
-    String name;
-
-    Broken() {
     }
 }
