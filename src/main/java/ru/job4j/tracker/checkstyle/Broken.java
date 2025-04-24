@@ -12,7 +12,7 @@ public class Broken {
     public void echo() {
     }
 
-    public void Media(Object obj) {
+    public void media(Object obj) {
         if (obj != null) {
             System.out.println(obj);
         }
