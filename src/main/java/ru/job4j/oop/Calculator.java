@@ -16,7 +16,7 @@ public class Calculator {
         return x * b;
     }
 
-    public int divide (int c) {
+    public int divide(int c) {
         return x / c;
     }
 
@@ -40,7 +40,7 @@ public class Calculator {
         System.out.println(result3);
 
         Calculator calculator3 = new Calculator();
-        int result4 = calculator3.sumAllOperation(4,5,5,10);
+        int result4 = calculator3.sumAllOperation(4, 5, 5, 10);
         System.out.println(result4);
     }
 }
