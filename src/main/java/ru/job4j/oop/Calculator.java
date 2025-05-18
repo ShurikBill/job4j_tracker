@@ -9,7 +9,7 @@ public class Calculator {
     }
 
     public static int minus(int a) {
-        return x - a;
+        return a - x;
     }
 
     public int multiply(int b) {
@@ -17,7 +17,7 @@ public class Calculator {
     }
 
     public int divide(int c) {
-        return x / c;
+        return c / x;
     }
 
     public int sumAllOperation(int x) {
