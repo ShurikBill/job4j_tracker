@@ -13,7 +13,7 @@ public class PointTest {
         Point b = new Point(1, 2, 3);
         double result = a.distance3d(b);
         double expected = 0.00;
-        assertThat(result).isEqualTo(expected , withPrecision(0.01));
+        assertThat(result).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
