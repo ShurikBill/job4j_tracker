@@ -39,6 +39,6 @@ public class Tracker {
                 count++;
             }
         }
-        return Arrays.copyOf(result,count);
+        return Arrays.copyOf(result, count);
     }
 }
