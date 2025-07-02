@@ -1,6 +1,6 @@
 package ru.job4j.polymorphism;
 
-public class Bus implements Transport{
+public class Bus implements Transport {
     @Override
     public void move() {
         System.out.println("Автобус едет по заданному маршруту");
@@ -17,7 +17,6 @@ public class Bus implements Transport{
         System.out.println("Цена топлива - " + result + " рублей");
         return result;
     }
-
 
     public static void main(String[] args) {
         Transport bus = new Bus();
