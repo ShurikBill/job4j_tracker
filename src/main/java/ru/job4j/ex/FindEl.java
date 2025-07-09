@@ -12,9 +12,9 @@ public class FindEl {
 
     public static void main(String[] args) {
         String[] value = {"Sasha", "Lesha", "Dima", "Petya", "Kolya"};
-        String key= "Sasha";
+        String key = "Sasha";
         try {
-            int index = indexOf(value,key);
+            int index = indexOf(value, key);
             System.out.println("Индекс: " + index);
         } catch (ElementNotFoundException e) {
             System.err.println("Ошибка: " + e.getMessage());
