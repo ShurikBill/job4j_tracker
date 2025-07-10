@@ -1,6 +1,6 @@
 package ru.job4j.tracker.input;
 
-public class ValidateInput extends Console {
+public class Validate extends Console {
 
     @Override
     public int askInt(String question) {
