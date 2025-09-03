@@ -6,6 +6,7 @@ import ru.job4j.tracker.input.Mock;
 import ru.job4j.tracker.output.Output;
 import ru.job4j.tracker.output.Stub;
 import ru.job4j.tracker.action.*;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -22,7 +23,7 @@ class StartUITest {
                 new Exit(output)
         };
         new StartUI(output).init(input, tracker, actions);
-        assertThat(tracker.findAll()[0].getName()).isEqualTo("Item name");
+        assertThat(tracker.findAll().get(0).getName()).isEqualTo("Item name");
     }
 
     @Test
