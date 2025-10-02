@@ -12,15 +12,11 @@ public class BankService {
     private final Map<User, List<Account>> users = new HashMap<>();
 
     public void addUser(User user) {
-        if (user != null) {
             users.putIfAbsent(user, new ArrayList<Account>());
-        }
     }
 
     public void deleteUser(String passport) {
-        if (passport != null) {
             users.remove(new User(passport, null));
-        }
     }
 
     public void addAccount(String passport, Account account) {
@@ -34,9 +30,6 @@ public class BankService {
     }
 
     public User findByPassport(String passport) {
-        if (passport == null) {
-            return null;
-        }
         for (User user : users.keySet()) {
             if (passport.equals(user.getPassport())) {
                 return user;
