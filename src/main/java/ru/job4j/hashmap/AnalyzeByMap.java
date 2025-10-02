@@ -9,7 +9,7 @@ public class AnalyzeByMap {
         for (Pupil pupil : pupils) {
             for (Subject subject : pupil.subjects()) {
                 resultScore += subject.score();
-                resultSubject ++;
+                resultSubject++;
             }
         }
         return resultSubject == 0 ? 0D : resultScore / resultSubject;
@@ -34,7 +34,7 @@ public class AnalyzeByMap {
             for (Subject subject : pupil.subjects()) {
                 String subjectName = subject.name();
                 Integer subjectScore = subject.score();
-                subjectScores.put(subjectName,subjectScores.getOrDefault(subjectName, 0) + subjectScore);
+                subjectScores.put(subjectName, subjectScores.getOrDefault(subjectName, 0) + subjectScore);
             }
         }
         List<Label> labels = new ArrayList<>();
@@ -66,7 +66,7 @@ public class AnalyzeByMap {
             for (Subject subject : pupil.subjects()) {
                 String subjectName = subject.name();
                 Integer subjectScore = subject.score();
-                subjectScores.put(subjectName,subjectScores.getOrDefault(subjectName, 0) + subjectScore);
+                subjectScores.put(subjectName, subjectScores.getOrDefault(subjectName, 0) + subjectScore);
             }
         }
         List<Label> labels = new ArrayList<>();
