@@ -15,10 +15,10 @@ public class BankService {
     private final Map<User, List<Account>> users = new HashMap<>();
 
     /**
-     * Метод, позволяющий добавлять нового пользователя
-     * содержит проверку, если пользователь уже есть, то нового добавлять не нужно
-     * метод putIfAbsent по параметру user создаст значение new ArrayList<Account>()
-     * @param user
+     * Метод добавляет пользователя, если его нет.
+     * Использует {@code putIfAbsent} и создаёт {@code new ArrayList<Account>()}.
+     *
+     * @param user пользователь для добавления
      */
     public void addUser(User user) {
             users.putIfAbsent(user, new ArrayList<Account>());
